@@ -1,0 +1,42 @@
+#footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer .icono img{
+    width: 200px;
+    height: 180px;
+    border-radius: 100%;
+    border: 4px dotted blue;
+    margin-top: 10px;
+}
+
+#footer .icono img:hover{
+    box-shadow: 40px 12px 13px rgb(12, 213, 231);
+    transition: 1s;
+}
+
+#footer .boton{
+    text-align: center;
+    font-size: 70px;
+}
+
+#footer .boton:hover{
+    color: rgb(186, 235, 11);
+    transition: 1s;
+    transform: translate(0px, -50px);
+}
+
+#footer .saber__mas__inicio, .saber__mas__lavado, .saber__mas__precios, .saber__mas__contacto, .saber__mas__empresa{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__redes__sociales img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}

@@ -1,0 +1,26 @@
+#banner__Lavado img{
+    width: 700px;
+    height: 600px;
+    border-radius: 40px;
+}
+
+#banner__Lavado img:active{
+    transition: 2s;
+    transform: rotateX(30deg);
+}
+
+.lavado__banner{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, rgb(215, 190, 144), rgb(187, 90, 90));
+}
+
+.parrafo .primero, .segundo, .tercero, .cuarto{
+    margin-bottom: 15px;
+}
+
+.parrafo h1{
+    text-align: center;
+    margin-bottom: 5px;
+    color: brown;
+}

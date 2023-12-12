@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a, li {
+  display: inline-block;
+  font-style: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+#header nav {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: left;
+}
+
+#header nav ul .container img {
+  width: 50px;
+}
+
+#header {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(252, 252, 252);
+  position: sticky;
+  z-index: 0;
+}
+
+#header nav ul li a {
+  display: flex;
+  font-size: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+}
+
+#nav ul li a:hover {
+  color: rgb(255, 0, 0);
+  transition: 1s;
+}
+
+#footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer .icono img {
+  width: 200px;
+  height: 180px;
+  border-radius: 100%;
+  border: 4px dotted blue;
+  margin-top: 10px;
+}
+
+#footer .icono img:hover {
+  box-shadow: 40px 12px 13px rgb(12, 213, 231);
+  transition: 1s;
+}
+
+#footer .boton {
+  text-align: center;
+  font-size: 70px;
+}
+
+#footer .boton:hover {
+  color: rgb(186, 235, 11);
+  transition: 1s;
+  transform: translate(0px, -50px);
+}
+
+#footer .saber__mas__inicio, .saber__mas__lavado, .saber__mas__precios, .saber__mas__contacto, .saber__mas__empresa {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__redes__sociales img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+#banner__Lavado img {
+  width: 700px;
+  height: 600px;
+  border-radius: 40px;
+}
+
+#banner__Lavado img:active {
+  transition: 2s;
+  transform: rotateX(30deg);
+}
+
+.lavado__banner {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, rgb(215, 190, 144), rgb(187, 90, 90));
+}
+
+.parrafo .primero, .segundo, .tercero, .cuarto {
+  margin-bottom: 15px;
+}
+
+.parrafo h1 {
+  text-align: center;
+  margin-bottom: 5px;
+  color: brown;
+}
+
+.precios__1 {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to left, green, rgba(0, 0, 255, 0.765));
+}
+
+#banner__precios .precios__1 img {
+  width: 500px;
+  height: 500px;
+  transition: 2s;
+  transform: translate(0px, 20px);
+}
+
+#banner__precios .precios__1 img:active {
+  transform: rotate(180deg);
+  transition: 1s;
+}
+
+.precios__2 {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to left, green, rgba(0, 0, 255, 0.765));
+}
+
+#banner__precios .precios__2 img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transition: 2s;
+  transform: translate(0px, 20px);
+}
+
+#banner__precios .precios__2 img:active {
+  transition: 1s;
+  transform: translate(20px, -10px);
+}
+
+.autoservicio {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.881), white);
+}
+
+#banner__contacto .autoservicio img {
+  border-radius: 100px;
+  width: 700px;
+  height: 400px;
+}
+
+#banner__contacto .autoservicio img:active {
+  transform: rotateX(60deg);
+  transition: 2s;
+}
+
+#banner__contacto .parrafo__contacto {
+  text-align: center;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.881), white);
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.881), white);
+}
+
+#banner__contacto .contacto img {
+  width: 560px;
+  height: 80px;
+  margin-top: 10px;
+}
+
+#banner__contacto .contacto img:active {
+  transition: 2s;
+  transform: rotateY(50deg);
+}
+
+.empresa {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to left, yellow, red);
+}
+
+#banner__empresa .empresa img:active {
+  transition: 2s;
+  transform: rotateY(180deg);
+}
+
+#banner__empresa .empresa img {
+  transition: 2s;
+  transform: rotateX(180deg);
+}
+
+#banner__empresa h2 {
+  text-align: center;
+  background-image: linear-gradient(to left, yellow, red);
+}
+
+#banner__empresa p {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  background-image: linear-gradient(to left, rgb(45, 205, 152), rgb(46, 46, 166));
+}
+
+#banner__empresa .productos {
+  display: grid;
+  background-image: linear-gradient(to left, rgb(45, 205, 152), rgb(48, 48, 166));
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  gap: 20px;
+  grid-area: "imagen__grid__1 imagen__grid__2 imagen__grid__3" "imagen__grid__4 imagen__grid__5 imagen__grid__6";
+}
+
+.imagen__grid__1 {
+  margin-left: 20px;
+  width: 290px;
+  height: 200px;
+  background-image: url(../images/producto\ 1.jpg);
+  background-size: cover;
+}
+
+.imagen__grid__1:hover {
+  transition: 1s;
+  transform: translate(20px, 0px);
+}
+
+.imagen__grid__2 {
+  margin-left: 70px;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/producto\ 2.jpg);
+  background-size: cover;
+}
+
+.imagen__grid__2:hover {
+  transition: 1s;
+  transform: translate(25px, 0px);
+}
+
+.imagen__grid__3 {
+  margin-left: 20px;
+  width: 295px;
+  height: 200px;
+  background-image: url(../images/producto\ 3.jpg);
+  background-size: cover;
+}
+
+.imagen__grid__3:hover {
+  transition: 1s;
+  transform: translate(-50px, 0px);
+}
+
+.imagen__grid__4 {
+  width: 200px;
+  height: 200px;
+  margin-left: 55px;
+  background-image: url(../images/producto\ 4.jpg);
+  background-size: cover;
+}
+
+.imagen__grid__4:hover {
+  transition: 1s;
+  transform: translate(0px, -10px);
+}
+
+.imagen__grid__5 {
+  width: 270px;
+  height: 200px;
+  margin-left: 40px;
+  background-image: url(../images/producto\ 5.jpg);
+  background-size: cover;
+}
+
+.imagen__grid__5:hover {
+  transition: 1s;
+  transform: translate(0px, -10px);
+}
+
+.imagen__grid__6 {
+  width: 370px;
+  height: 200px;
+  background-image: url(../images/producto\ 6.jpg);
+  background-size: cover;
+}
+
+.imagen__grid__6:hover {
+  transition: 1s;
+  transform: translate(-40px, 0px);
+}
+
+#banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to top, grey, black);
+}
+
+#banner img {
+  width: 100%;
+  position: relative;
+}
+
+#banner img:active {
+  transition: 3s;
+  transform: rotateY(360deg);
+}
+
+#banner .titulo {
+  text-align: right;
+  font-size: 35px;
+  position: absolute;
+  top: 0;
+}
+
+.titulo:hover {
+  color: rgb(229, 71, 13);
+  transition: 1s;
+  transform: translate(30px, 30px);
+}
+
+#servicios h2:hover {
+  transition: 1s;
+  color: rgb(213, 200, 200);
+}
+
+#servicios {
+  background-image: linear-gradient(to left, blue, red);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#servicios .servicios__lavado img:hover {
+  transition: 2s;
+  transform: rotate(360deg);
+}
+
+#servicios .servicios__Precios img:hover {
+  transition: 2s;
+  transform: rotateX(60deg);
+}
+
+#servicios .servicios__Contacto img:hover {
+  transition: 2s;
+  transform: rotateY(60deg);
+}
+
+#servicios .servicios__Empresa img:hover {
+  transition: 2s;
+  transform: rotate(90deg);
+}
+
+#servicios img {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background-color: white;
+}
+
+.servicios__todos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicios__todos a:hover {
+  color: rgb(22, 214, 25);
+  transition: 1s;
+}
+
+#servicios article {
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  margin: 15px;
+  border-radius: 26px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+#servicios .servicios__lavado:hover {
+  box-shadow: 10px 10px rgb(5, 28, 234);
+  transition: 1s;
+}
+
+#servicios .servicios__lavado:active {
+  transform: rotate(360deg);
+}
+
+#servicios .servicios__Precios:hover {
+  box-shadow: 10px 10px rgb(3, 242, 31);
+  transition: 1s;
+}
+
+#servicios .servicios__Precios:active {
+  transform: rotate(90deg);
+}
+
+#servicios .servicios__Contacto:hover {
+  box-shadow: 10px 10px black;
+  transition: 1s;
+}
+
+#servicios .servicios__Contacto:active {
+  transform: rotate(180deg);
+}
+
+#servicios .servicios__Empresa:hover {
+  box-shadow: 10px 10px rgb(204, 3, 254);
+  transition: 1s;
+}
+
+#servicios .servicios__Empresa:active {
+  transform: rotate(270deg);
+}
+
+#servicios h2 {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

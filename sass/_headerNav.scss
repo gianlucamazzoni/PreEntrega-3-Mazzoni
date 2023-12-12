@@ -1,0 +1,32 @@
+#header nav{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: left;
+}
+
+#header nav ul .container img{
+    width: 50px;
+}
+
+#header{
+    width: 100%;   
+    text-align: center;
+    background-color: rgb(252, 252, 252);
+    position: sticky;
+    z-index: 0;
+}
+
+#header nav ul li a {
+    display: flex;
+    font-size: 20px;
+    margin-left: 20px;
+    flex-direction: column;
+}
+
+#nav ul li a:hover{
+    color: rgb(255, 0, 0);
+    transition: 1s;
+}

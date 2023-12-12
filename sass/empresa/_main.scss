@@ -1,0 +1,116 @@
+.empresa{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to left, yellow, red);
+}
+
+#banner__empresa .empresa img:active{
+    transition: 2s;
+    transform: rotateY(180deg);
+}
+
+#banner__empresa .empresa img{
+    transition: 2s;
+    transform: rotateX(180deg);
+}
+
+#banner__empresa h2{
+    text-align: center;
+    background-image: linear-gradient(to left, yellow, red)
+}
+
+#banner__empresa p{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-image: linear-gradient(to left, rgba(45, 205, 152), rgb(46, 46, 166))
+}
+
+#banner__empresa .productos{
+    display: grid;
+    background-image: linear-gradient(to left, rgb(45, 205, 152), rgb(48, 48, 166));
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 20px;
+    grid-area: 
+    "imagen__grid__1 imagen__grid__2 imagen__grid__3"
+    "imagen__grid__4 imagen__grid__5 imagen__grid__6"
+    ;
+}
+
+.imagen__grid__1{
+    margin-left: 20px;
+    width: 290px;
+    height: 200px;
+    background-image: url(../images/producto\ 1.jpg);
+    background-size: cover;
+}
+
+.imagen__grid__1:hover{
+    transition: 1s;
+    transform: translate(20px, 0px);
+}
+
+.imagen__grid__2{
+    margin-left: 70px;
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/producto\ 2.jpg);
+    background-size: cover;
+}
+
+.imagen__grid__2:hover{
+    transition: 1s;
+    transform: translate(25px, 0px);
+}
+
+.imagen__grid__3{
+    margin-left: 20px;
+    width: 295px;
+    height: 200px;
+    background-image: url(../images/producto\ 3.jpg);
+    background-size: cover;    
+}
+
+.imagen__grid__3:hover{
+    transition: 1s;
+    transform: translate(-50px, 0px);
+}
+
+.imagen__grid__4{
+    width: 200px;
+    height: 200px;
+    margin-left: 55px;
+    background-image: url(../images/producto\ 4.jpg);
+    background-size: cover;
+}
+
+.imagen__grid__4:hover{
+    transition: 1s;
+    transform: translate(0px, -10px);
+}
+
+.imagen__grid__5{
+    width: 270px;
+    height: 200px;
+    margin-left: 40px;
+    background-image: url(../images/producto\ 5.jpg);
+    background-size: cover;
+}
+
+.imagen__grid__5:hover{
+    transition: 1s;
+    transform: translate(0px, -10px);
+}
+
+.imagen__grid__6{
+    width: 370px;
+    height: 200px;
+    background-image: url(../images/producto\ 6.jpg);
+    background-size: cover;
+}
+
+.imagen__grid__6:hover{
+    transition: 1s;
+    transform: translate(-40px, 0px);
+}

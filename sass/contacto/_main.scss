@@ -1,0 +1,38 @@
+.autoservicio{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.881), white);
+}
+
+#banner__contacto .autoservicio img{
+    border-radius: 100px;
+    width: 700px;
+    height: 400px;
+}
+
+#banner__contacto .autoservicio img:active{
+    transform: rotateX(60deg);
+    transition: 2s;
+}
+
+#banner__contacto .parrafo__contacto{
+    text-align: center;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.881), white);
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.881), white);
+}
+
+#banner__contacto .contacto img{
+    width: 560px;
+    height: 80px;
+    margin-top: 10px;
+} 
+
+#banner__contacto .contacto img:active{
+    transition: 2s;
+    transform: rotateY(50deg);
+}
